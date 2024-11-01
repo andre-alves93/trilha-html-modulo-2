@@ -23,16 +23,89 @@ body {
     background-color: aqua;
     padding: 10px 20px 0px;
 }
-.header {
-    background-color: rgb(5, 108, 108);
-    min-height: 150px;
+
+.header-template 
+    {
+        background-image: url('imagens/headers/header_index.jpeg');
+        background-size: cover; /* Ajusta a imagem para cobrir todo o header */
+        background-position: center; /* Centraliza a imagem */
+        height: 150px; /* Ajuste a altura conforme necessário */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.header-about 
+    {
+        background-image: url('imagens/headers/header_about.jpg');
+        background-size: cover; /* Ajusta a imagem para cobrir todo o header */
+        background-position: center; /* Centraliza a imagem */
+        height: 150px; /* Ajuste a altura conforme necessário */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+.header-hours
+    {
+        background-image: url('imagens/headers/header_horario.jpeg');
+        background-size: cover; /* Ajusta a imagem para cobrir todo o header */
+        background-position: center; /* Centraliza a imagem */
+        height: 150px; /* Ajuste a altura conforme necessário */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.header-contact
+    {
+        background-image: url('imagens/headers/header_contactus.jpg');
+        background-size: cover; /* Ajusta a imagem para cobrir todo o header */
+        background-position: center; /* Centraliza a imagem */
+        height: 150px; /* Ajuste a altura conforme necessário */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+    .nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    
+    .nav li {
+        margin-right: 20px;
+    }
+    
+    .nav li a {
+        text-decoration: none;
+        color: #181515; /* Cor do texto para contrastar com o fundo */
+        padding: 10px 20px;
+        display: block;
+    }
+    
+    .nav li a:hover {
+        background-color: rgba(255, 255, 255, 0.3); /* Efeito de hover */
 }
+
 .content {
     background-color: white;
-    min-height: 300px;
+    min-height: 500px;
     padding: 20px;
 }
 .footer {
-    background-color: rgb(99, 56, 240);
-    min-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.footer section {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer section p, .footer section h4, .footer section a {
+    margin: 0;
+    padding: 5px 0;
 }
